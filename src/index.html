@@ -4,33 +4,77 @@
 <head>
   <title>Costco Royale</title>
 </head>
-<h1>Costco Royale</h1>
-<h2>Part 1: Enter the 36 Costcos</h2>
-<p>The year is 2021. The second wave of SARS-COV-2 brought on a second wave of panic buying. Due to understocked product and the government taking the sardonic comment of an intern seriously, a new program was put in place to solve the issue: a battle rayale.</p>
-<br>
-<p>The rules are simple: a small group of six shoppers are let into the Costco, and they have to fight eachother for the
-  supplies. The last survivor gets to walk home.
-This new rule ended up killing thousands of Americans within the first month alone. But our hero, Pete Buffley, and his toddler, Hans(he's adopted), are determined to go home with the loot.
-</p>
-<br>
-<br>
-<p>There will be blood.</p>
-<br>
-<br>
-<br>
-<h2>Chapter 2: </h2>
+  <body>
+    <h1>Costco Royale</h1>
 
 
 
 
+    <!--Battle Screen-->
+    <div class="container" id="battle-mode">
+      <h3>Battle Mode<h3>
+        <h4><span id="enemy-attack"></span></h4>
+        <div id="hoarder-image"><img src="https://media1.popsugar-assets.com/files/thumbor/-sf8mQV_E5BMY1Hi2fzCkOb30U0/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2014/07/28/884/n/24155406/ac2c5fe3f86c4b27_tumblr_mepj0uGyoV1qjcyqno1_500/i/Stealth-Shopper.gif"></div>
+        <div id="enemy-stats">
+          <h3>Hoarder HP:<span id="enemy-hp"></span></h3>
+        </div>
+        <br>
+        <br>
+        <div id="player-stats">
+          <h3>Player HP<span id="player-hp"></span><h3>
+        </div>
+        <form id="attack-select">
+          <div id="player-skills">
+            <input class="form-check-input" type="radio" name="skillset" value="grab" required>
+            <label class="form-check-label" for="grab">Grab</label>
+          </div>
+          <br>
+          <br>
+          <button type="submit" class="btn">ATTACK!</button>
+        </form>
 
-<!--Battle Screen-->
-<div class="container" id="battle-mode">
-  <h3>Battle Mode<h3>
-    <h4><span id="enemy-attack"></span></h4>
-    <div id="hoarder-image"><img src="https://media1.popsugar-assets.com/files/thumbor/-sf8mQV_E5BMY1Hi2fzCkOb30U0/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2014/07/28/884/n/24155406/ac2c5fe3f86c4b27_tumblr_mepj0uGyoV1qjcyqno1_500/i/Stealth-Shopper.gif"></div>
-    <div id="enemy-stats">
-      <h3>Hoarder HP:<span id="enemy-hp"></span></h3>
+
+    <!--Story Mode-->
+    <h2>Part 1: Enter the 36 Costcos</h2>
+    <p>The year is 2021. The second wave of SARS-COV-2 brought on a second wave of panic buying. Due to understocked product and the government taking the sardonic comment of an intern seriously, a new program was put in place to solve the issue: a battle rayale.</p>
+    <br>
+    <p>The rules are simple: a small group of six shoppers are let into the Costco, and they have to fight eachother for the
+      supplies. The last survivor gets to walk home.
+    This new rule ended up killing thousands of Americans within the first month alone. But our hero, Pete Buffley, and his toddler, Hans(he's adopted), are determined to go home with the loot.
+    </p>
+    <br>
+    <br>
+    <p>There will be blood.</p>
+    <br>
+    <br>
+    <br>
+    <p>You and Hans enter the Costco, ready to fight for your supplies. The costco workers all wish you good luck, hand you a cart, and send you on your way. Which way shall you go?</p>
+
+
+    <div id="space1-3">
+      
     </div>
 
+    <!--Navigation Pad-->
+    <form>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="move-select" value="north" required>
+        <label class="form-check-label" for="north">Move North</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="move-select" value="west" required>
+        <label class="form-check-label" for="west">Move West</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="move-select" value="east" required>
+        <label class="form-check-label" for="east">Move East</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="move-select" value="south" required>
+        <label class="form-check-label" for="south">Move South</label>
+      </div>
+      <button type="submit" class="btn">
+    </form>
+
+  </body>
 </html>

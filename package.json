@@ -1,5 +1,5 @@
 {
-  "name": "new-templete",
+  "name": "costco-royale",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "",
+  "author": "Celeste Field, Eric Grove, Maria Lagunero",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -31,5 +31,14 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
-  }
+  },
+  "description": "_This application will have a player try to grab toilet paper from the store. At the same time an enemy will be trying to swipe it from them. They will move around a 3x3 board._",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fieldceleste/RPG-game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fieldceleste/RPG-game/issues"
+  },
+  "homepage": "https://github.com/fieldceleste/RPG-game#readme"
 }

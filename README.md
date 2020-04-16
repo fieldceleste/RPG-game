@@ -1,10 +1,11 @@
-# _Costco Royal_
+# _Costco Royale_
 ## _By: Maria Lagunero, Erik Grove, and Celeste Field_
 ## Description
 
 _This application will have a player try to grab toilet paper from the store. At the same time an enemy will be trying to swipe it from them. They will move around a 3x3 board._
 
 ## Setup
+
 
 * _Clone repository from Github_
 * _Open in editor (i.e. Visual Studio Code)_
@@ -13,16 +14,23 @@ _This application will have a player try to grab toilet paper from the store. At
 
 ## Technology
 
+_HTML, CSS, Bootstrap, jQuery, JavaScript, Node, Jest, Babel_
+
 ## Specs
 
 |Behavior|Input|Output|
 |-----|-----|-----|
 
+1. Add constructors
+2. Create properties for constructors
+3. Create prototypes for properties
+4. 
+
 ## Legal
 
 #### MIT License
 
-### Copyright (c) 2020 Ethan Alexander Firpo
+### Copyright (c) 2020 Celeste Field, Erik Grove and Maria Lagunero
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
