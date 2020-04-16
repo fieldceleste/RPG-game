@@ -6,19 +6,36 @@ export class Game {
     // this.enemy = new Enemy();
     // this.currentSpace = this.board.space1;
     // this.enemySpace = this.board.space1;
-    
+
     // this.action = [];
   }
+
+  assignMove(moveInput) {
+    if (moveInput === "North") {
+      this.currentSpace.moveNorth();
+    } else if (moveInput === "East") {
+      this.currentSpace.moveEast();
+    } else if (moveInput === "South") {
+      this.currentSpace.moveSouth();
+    } else if (moveInput === "West") {
+      this.currentSpace.moveWest();
+    }
+  }
+
+
+  //--Player Class---
+  // export class Player {
+  //   constructor() {
+  //     this.shopper1 = { action: "grab" }
+  //     this.hoarder1 = { action: "swipe" }
+  //   }
+  checkEnemy() {
+    if (this.currentSpace.xCoordinate === this.enemySpace.xCoordinate &&
+      this.currentSpace.yCoordinate === this.enemySpace.yCoordinate) {
+      return true;
+    }
+  }
 }
-
-
-//--Player Class---
-// export class Player {
-//   constructor() {
-//     this.shopper1 = { action: "grab" }
-//     this.hoarder1 = { action: "swipe" }
-//   }
-
 
 //--Battle Class ---
 export class Battle {
@@ -27,21 +44,21 @@ export class Battle {
     this.enemy = enemy;
   }
 }
-  //--Turn  class --
 
 
 
-  // Player Location--
-  export class Space {
-    constructor(xCoordinate, yCoordinate) {
-      this.xCoordinate = xCoordinate;
-      this.yCoordinate = yCoordinate;
-    }
+
+// Player Location--
+export class Space {
+  constructor(xCoordinate, yCoordinate) {
+    this.xCoordinate = xCoordinate;
+    this.yCoordinate = yCoordinate;
   }
+}
 
-  //--Board Class--
+//--Board Class--
 export class Board {
-  constructor () {
+  constructor() {
     this.space1 = new Space(1, 1);
     this.space2 = new Space(1, 2);
     this.space3 = new Space(1, 3);
@@ -54,11 +71,29 @@ export class Board {
   }
 }
 
+//--Player Class--
+export class Player {
+  constructor() {
+    this.char;
+    this.level = 1;
+    this.turn = 0;
+  }
+}
+// Shopper 1 class --
+export class Shopper1 {
+  constructor() {
+    this.name = "Pete"
+    this.HP = 50;
 
-  // Shopper 1 class --
+  }
+}
 
-
-  // Hoarder 1 Class ---
-
+// Hoarder 1 Class ---
+export class Hoarder1 {
+  constructor() {
+    this.name = "Hoarder"
+    this.hp = 50;
+  }
+}
 
 
